@@ -80,7 +80,7 @@ namespace Electrodymestics.electrodymestics
 
         public void checkEnergyConsumption(string energyConsumption){
             double aux = this._tableEnergyConsumption[energyConsumption];
-            if(aux != null){
+            if(aux < 0){
                 this._energyConsumption=energyConsumption;
             }
             Console.WriteLine("No se encuntra en la tabla de consumo energetico");
@@ -100,7 +100,7 @@ namespace Electrodymestics.electrodymestics
                 this.basePrice=100;
             }
             double aux = this._tableEnergyConsumption[this._energyConsumption];
-            if(aux != null){
+            if(aux < 0){
                 this._basePrice=aux+this._basePrice;
 
             }

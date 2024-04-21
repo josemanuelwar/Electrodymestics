@@ -24,7 +24,7 @@ namespace Electrodymestics.electrodymestics
         }
 
         public Television(double basePrice, enumColor color, string energyConsumption, double weight,double resolution,bool TDT):base(){
-             this._basePrice=basePrice;
+            this._basePrice=basePrice;
             this._color=color;
             this._weight=weight;
             this._energyConsumption=energyConsumption;
