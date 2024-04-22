@@ -1,8 +1,6 @@
-using System.ComponentModel.Design;
 using Electrodymestics.enums;
 
-namespace Electrodymestics.electrodymestics
-{
+namespace Electrodymestics.electrodymestics;
     public class ElectrodyMestic
     {
         protected double _basePrice;
@@ -82,8 +80,9 @@ namespace Electrodymestics.electrodymestics
             double aux = this._tableEnergyConsumption[energyConsumption];
             if(aux < 0){
                 this._energyConsumption=energyConsumption;
+            }else{
+                Console.WriteLine("No se encuntra en la tabla de consumo energetico");
             }
-            Console.WriteLine("No se encuntra en la tabla de consumo energetico");
         }
         
         public virtual double FinalPrice(){
@@ -106,7 +105,5 @@ namespace Electrodymestics.electrodymestics
             }
             return this._basePrice;
         }
-
         
     }
-}

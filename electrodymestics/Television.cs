@@ -1,7 +1,5 @@
-using System;
 using Electrodymestics.enums;
-namespace Electrodymestics.electrodymestics
-{
+namespace Electrodymestics.electrodymestics;
     public class Television : ElectrodyMestic
     {
         private double _resolution;
@@ -53,16 +51,15 @@ namespace Electrodymestics.electrodymestics
 
         public override double FinalPrice()
         {
-            double importe=base.FinalPrice();
-            double porcentage=0;
+            double amount=base.FinalPrice();
+            double percentage=0;
             if(this.resolution>40){
-                porcentage=(importe * porciento)/100;
+                percentage=(amount * percentage)/100;
             }
-            importe=importe+porcentage;
+            amount=amount+percentage;
             if(this._TDT){
-                importe+=50;
+                amount+=50;
             }
-            return importe;
+            return amount;
         }
     }
-}

@@ -1,7 +1,6 @@
 using Electrodymestics.enums;
 
-namespace Electrodymestics.electrodymestics
-{
+namespace Electrodymestics.electrodymestics;
     public class WashingMachine :ElectrodyMestic
     {
        private double _load;
@@ -46,4 +45,3 @@ namespace Electrodymestics.electrodymestics
             return base.FinalPrice()+aux;
         }
     }
-}
